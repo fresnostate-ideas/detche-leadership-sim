@@ -37,3 +37,7 @@ The site loads Fraunces (headings) and Source Sans 3 (interface and body text) f
 
 
 Typography v2: Fraunces is used on headings, questions and pull quotes; Source Sans 3 on body and controls. Fonts are fetched from Google Fonts when online. If deployed over an older version, hard-refresh the page to clear browser cache; `style.css?v=typography-2` is included to refresh the stylesheet.
+
+## Opening illustration
+
+The introductory scene uses `vr-headset1.jpeg` as a locally bundled, feathered background image (no third-party image request). Keep this file alongside `index.html` and `style.css` when publishing to GitHub Pages. The image is decorative; its context is supplied by adjacent text. Confirm you have appropriate rights to publish the image.

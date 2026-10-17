@@ -27,3 +27,10 @@ body { font-family: var(--font-body); font-size: 17px; line-height: 1.57; }
 .person strong, .scene-sender strong { font-family: var(--font-body); font-weight: 700; }
 .primary { font-family: var(--font-body); font-size: 16px; font-weight: 700; }
 @media(max-width:720px) { .narrative .quote { font-size: 18px; } .decision h3 { font-size: 20px; } }
+
+/* Opening image: atmospheric editorial background, not a stacked photo. */
+.intro{position:relative;isolation:isolate;max-width:none;min-height:620px;padding:90px 0 68px}
+.intro-visual{position:absolute;z-index:-1;inset:22px -28px auto 24%;height:460px;pointer-events:none;background-image:linear-gradient(90deg,#eef0eb 0%,rgba(238,240,235,.96) 12%,rgba(238,240,235,.68) 35%,rgba(238,240,235,.12) 73%),linear-gradient(0deg,#eef0eb 0%,rgba(238,240,235,.08) 38%,rgba(238,240,235,0) 88%),url("vr-headset1.jpeg");background-position:center,center,center 37%;background-size:cover;opacity:.84;mask-image:linear-gradient(0deg,transparent 0%,black 28%,black 89%,transparent 100%);-webkit-mask-image:linear-gradient(0deg,transparent 0%,black 28%,black 89%,transparent 100%)}
+.intro-copy{position:relative;z-index:1}.intro h1{max-width:770px}.intro .lede{max-width:610px;color:#31494f}.intro-grid{max-width:750px;margin-top:55px}.intro-grid>div{background:rgba(238,240,235,.62);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+@media(max-width:720px){.intro{min-height:0;padding:55px 0 55px}.intro-visual{inset:0 -18px auto 0;height:370px;background-position:center,center,55% 36%;background-image:linear-gradient(90deg,#eef0eb 0%,rgba(238,240,235,.83) 36%,rgba(238,240,235,.43) 100%),linear-gradient(0deg,#eef0eb 0%,rgba(238,240,235,.2) 50%,transparent 100%),url("vr-headset1.jpeg");opacity:.65}.intro .lede{max-width:100%}.intro-grid{margin-top:40px}.intro-grid>div{background:rgba(238,240,235,.84)}}
+@media(prefers-reduced-transparency:reduce){.intro-grid>div{backdrop-filter:none;-webkit-backdrop-filter:none}}
