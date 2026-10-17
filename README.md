@@ -56,3 +56,13 @@ The permanent-provost scene now presents opposing staff perspectives (Rafael and
 - A reachable XR PROGRAM THRIVING ending now follows demonstrated instructional adoption, accessible design or shared faculty ownership, and a funded operating proposal.
 - The end-of-year review clarifies interim provost limits; the reporting line remains directly to the provost.
 - No scoring, accounts, data collection, or changes to the four-decision structure.
+
+### Version 10 narrative change
+The permanent-provost AI pivot offers a conditional choice to ask Dr. Brooks to advocate for XR when prior decisions established her as a faculty champion. She respectfully declines due to upcoming tenure review. The President's award is referenced only if it occurred earlier on that path. The path leads to a distinct faculty-advocate-withdrawal outcome, without an additional decision or any change to privacy settings.
+
+
+## Brand and accessibility (Version 11)
+
+The fictional Ash Creek University uses burgundy `#714b55` and blue `#084aae` as brand accents. Both are used with appropriate contrasting text; muted foreground text was darkened. Focus moves to the new scene heading, consequence heading, or outcome heading as the interface changes. The progress indicator includes a text equivalent.
+
+This version is designed toward WCAG 2.1 AA and includes accessibility-oriented corrections. Automated source and contrast checking is **not a conformance certification**. Before public deployment, test all branches in a browser with keyboard only, screen readers (VoiceOver + Safari and NVDA + Firefox or Chrome), zoom/reflow at 200% and 400%, and automated tools such as axe DevTools. In particular, verify focus movement and announcements when dynamic content changes, and verify each branch's text and contrast. The ADA Title II rule uses WCAG 2.1 AA; see https://www.ada.gov/resources/2024-03-08-web-rule/.

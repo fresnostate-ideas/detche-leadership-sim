@@ -34,3 +34,26 @@ body { font-family: var(--font-body); font-size: 17px; line-height: 1.57; }
 .intro-copy{position:relative;z-index:1}.intro h1{max-width:770px}.intro .lede{max-width:610px;color:#31494f}.intro-grid{max-width:750px;margin-top:55px}.intro-grid>div{background:rgba(238,240,235,.62);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
 @media(max-width:720px){.intro{min-height:0;padding:55px 0 55px}.intro-visual{inset:0 -18px auto 0;height:370px;background-position:center,center,55% 36%;background-image:linear-gradient(90deg,#eef0eb 0%,rgba(238,240,235,.83) 36%,rgba(238,240,235,.43) 100%),linear-gradient(0deg,#eef0eb 0%,rgba(238,240,235,.2) 50%,transparent 100%),url("vr-headset1.jpeg");opacity:.65}.intro .lede{max-width:100%}.intro-grid{margin-top:40px}.intro-grid>div{background:rgba(238,240,235,.84)}}
 @media(prefers-reduced-transparency:reduce){.intro-grid>div{backdrop-filter:none;-webkit-backdrop-filter:none}}
+
+
+/* Ash Creek University identity: burgundy + institutional blue. */
+:root { --brand-burgundy:#714b55; --brand-blue:#084aae; --brand-blue-dark:#063980; --ink:#172c32; --muted-strong:#4d6065; --paper:#eef0eb; }
+.mark,.intro h1 em,.outcome-status { color:var(--brand-burgundy); }
+.eyebrow,.paper .eyebrow,.after-label,.letter { color:var(--brand-burgundy); }
+.primary,.avatar { background:var(--brand-blue); color:#fff; }
+.primary:hover { background:var(--brand-blue-dark); }
+.primary:focus-visible,.choice:focus-visible,.skip:focus-visible { outline:3px solid var(--brand-burgundy);outline-offset:4px; }
+.choice:hover { border-color:var(--brand-blue); background:#f2f6fd; }
+.choice:focus-visible { border-color:var(--brand-blue); background:#f2f6fd; }
+.ticks i.active { background:var(--brand-blue); }
+.narrative .quote { border-left-color:var(--brand-burgundy); }
+.sender-mark { background:#eaf0fc; color:var(--brand-blue-dark); }
+.scene-sender { border-bottom-color:#b3c5e6; }
+.channel { color:var(--brand-blue-dark); border-color:#a9bad8; background:#f2f6fd; }
+.rail-title,.scene-top,.scene-top .eyebrow { color:#455963; }
+.brand span,.edition,.sitefoot,.mini-label,.playhead,.end-top,.fine,.footer-note,.person small,.scene-sender small,.rail-note p,.intro-grid p { color:var(--muted-strong); }
+.speaker-label,.sender-caption { color:#455963; }
+.intro-visual { background-image:linear-gradient(90deg,#eef0eb 0%,rgba(238,240,235,.96) 12%,rgba(238,240,235,.68) 35%,rgba(238,240,235,.12) 73%),linear-gradient(0deg,#eef0eb 0%,rgba(238,240,235,.08) 38%,rgba(238,240,235,0) 88%),url("vr-headset1.jpeg"); }
+@media(max-width:720px){ .intro-visual { background-image:linear-gradient(90deg,#eef0eb 0%,rgba(238,240,235,.83) 36%,rgba(238,240,235,.43) 100%),linear-gradient(0deg,#eef0eb 0%,rgba(238,240,235,.2) 50%,transparent 100%),url("vr-headset1.jpeg"); } }
+@media (forced-colors:active) { .primary,.choice { border:1px solid ButtonText; } .ticks i.active { outline:1px solid Highlight; } }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important;transition:none!important;animation:none!important; } }
