@@ -20,3 +20,20 @@ No network calls, database, authentication, analytics, third-party scripts, cook
 In `app.js`, edit `first` (opening decision), `nodes` (conditional scenes), `chooseNext()` (routing), and `finish()` (endings/debrief). Each playthrough has four decisions. If the participant declines to own the XR initiative, the story follows the leader into institutional consequences rather than stopping.
 
 This is a fictionalized teaching scenario, not a compliance guide. Review campus legal/security/accessibility procedures before using any implementation claim as operational advice.
+
+## Revision 2 notes
+
+- Fixed literal quotation tags in stakeholder messages, including inline quotations.
+- Added clearer speaker panels and an inline sender identity immediately above each communication.
+- Added a permanent provost transition on eligible paths; the interim provost's limited funding authority is explicit.
+- Reworked concluding outcomes to reflect all four decisions. Outcomes include a collapsed program, a stalled initiative, deliberate closure, a limited program, provisional renewal, and other consequences.
+- Removed named cohort-speaker attribution from the participant-facing debrief.
+
+The ending logic uses narrative flags to select plausible trajectories. It is intentionally not a validated predictive model.
+
+## Typography
+
+The site loads Fraunces (headings) and Source Sans 3 (interface and body text) from Google Fonts. It retains local system serif/sans-serif fallbacks if those resources are blocked or the visitor is offline. These font requests go to Google; no simulation decisions are sent or stored.
+
+
+Typography v2: Fraunces is used on headings, questions and pull quotes; Source Sans 3 on body and controls. Fonts are fetched from Google Fonts when online. If deployed over an older version, hard-refresh the page to clear browser cache; `style.css?v=typography-2` is included to refresh the stylesheet.
