@@ -48,3 +48,11 @@ The permanent provost now explicitly prioritizes curriculum-wide AI integration 
 
 ## Version 7 narrative change
 The permanent-provost scene now presents opposing staff perspectives (Rafael and Morgan) and replaces the extended off-ramp with a conditional faculty grant-funding path. The provost may permit a faculty-led application with strict support limits or refuse a proposal that requires institutional commitments.
+
+## Version 9 narrative consistency pass
+
+- CISO is Dr. Priya Nair; Morgan Chen remains the Academic Technology Specialist.
+- Early failure remains a failed initiative, but the leader’s final response changes the aftermath.
+- A reachable XR PROGRAM THRIVING ending now follows demonstrated instructional adoption, accessible design or shared faculty ownership, and a funded operating proposal.
+- The end-of-year review clarifies interim provost limits; the reporting line remains directly to the provost.
+- No scoring, accounts, data collection, or changes to the four-decision structure.
