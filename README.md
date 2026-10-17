@@ -41,3 +41,10 @@ Typography v2: Fraunces is used on headings, questions and pull quotes; Source S
 ## Opening illustration
 
 The introductory scene uses `vr-headset1.jpeg` as a locally bundled, feathered background image (no third-party image request). Keep this file alongside `index.html` and `style.css` when publishing to GitHub Pages. The image is decorative; its context is supplied by adjacent text. Confirm you have appropriate rights to publish the image.
+
+
+## Version 6 narrative revision
+The permanent provost now explicitly prioritizes curriculum-wide AI integration over XR. The decision offers evidence-based advocacy, a 12–18 month off-ramp, or semester-end closure; each has a distinct consequence and ending, including doubts about independent judgment after a quick reversal.
+
+## Version 7 narrative change
+The permanent-provost scene now presents opposing staff perspectives (Rafael and Morgan) and replaces the extended off-ramp with a conditional faculty grant-funding path. The provost may permit a faculty-led application with strict support limits or refuse a proposal that requires institutional commitments.
