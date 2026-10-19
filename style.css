@@ -57,3 +57,56 @@ body { font-family: var(--font-body); font-size: 17px; line-height: 1.57; }
 @media(max-width:720px){ .intro-visual { background-image:linear-gradient(90deg,#eef0eb 0%,rgba(238,240,235,.83) 36%,rgba(238,240,235,.43) 100%),linear-gradient(0deg,#eef0eb 0%,rgba(238,240,235,.2) 50%,transparent 100%),url("vr-headset1.jpeg"); } }
 @media (forced-colors:active) { .primary,.choice { border:1px solid ButtonText; } .ticks i.active { outline:1px solid Highlight; } }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important;transition:none!important;animation:none!important; } }
+
+/* V12: quiet case-file chrome, persistent but unobtrusive restart. */
+.mast{padding:18px 0 16px}
+.brand strong{font-family:var(--font-display);font-size:21px;font-weight:600;letter-spacing:-.025em}
+.mark{font-size:24px}
+.restart{min-height:44px;padding:9px 12px;border:1px solid #b8c6c1;border-radius:3px;background:transparent;color:#293f46;font-size:14px;font-weight:650;display:inline-flex;align-items:center;gap:8px}
+.restart:hover{background:#e0e8e8;border-color:#084aae}
+.restart:focus-visible{outline:3px solid var(--brand-burgundy);outline-offset:3px}
+.restart[hidden]{display:none}
+.intro{padding-top:76px}
+@media(max-width:720px){.intro{padding-top:47px}.brand strong{font-size:18px}.restart{padding:7px 10px}}
+
+/* Version 13 / editorial documentary scenes. Images remain decorative: no text relies on photography. */
+.intro-visual{background-image:linear-gradient(90deg,#eef0eb 0%,rgba(238,240,235,.96) 12%,rgba(238,240,235,.68) 35%,rgba(238,240,235,.12) 73%),linear-gradient(0deg,#eef0eb 0%,rgba(238,240,235,.08) 38%,rgba(238,240,235,0) 88%),url("images/vr-headset1.jpeg")}
+.scene{padding-top:30px}.scene-visual{position:relative;margin:0 -34px 24px;overflow:hidden;height:172px;background:#e0e7e2;border-radius:2px}
+.scene-visual[hidden]{display:none}.scene-visual img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.78);}
+.scene-visual:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(14,29,37,.64) 0%,transparent 46%),linear-gradient(90deg,rgba(238,240,235,.12),transparent 70%)}
+.scene-visual.photo-equipment img{object-position:center 55%}.scene-visual.photo-campus img{object-position:center 51%}.scene-visual.photo-meeting img{object-position:center 63%}
+.scene-photo-caption{position:absolute;left:18px;bottom:13px;z-index:1;color:#fff;font-family:var(--font-body);font-size:12px;line-height:1.4;font-weight:700;letter-spacing:.045em;text-shadow:0 1px 4px #15252c}
+.story-correspondence.correspondence{border-left:3px solid #b0bfd8;padding-left:21px}.story-correspondence.in-person{padding-left:0}
+.story-correspondence.correspondence .scene-sender{border-bottom:1px solid #cfdaeb;padding-bottom:15px;margin-bottom:20px}
+.story-correspondence.correspondence .sender-mark{border-radius:2px;background:#eaf0fc;color:var(--brand-blue-dark)}
+.story-correspondence.in-person .scene-sender{border-bottom:0;margin-bottom:4px;padding-bottom:8px}
+.story-correspondence.in-person .sender-caption::after{content:' · IN PERSON'}
+.story-correspondence.correspondence .sender-caption::after{content:' · CORRESPONDENCE'}
+.story-correspondence .scene-top{padding-top:3px}.story-correspondence.correspondence .narrative .quote{background:#f6f7fa}
+.closing-visual{height:120px;margin-bottom:28px;background:linear-gradient(0deg,rgba(238,240,235,.92) 0%,rgba(238,240,235,0) 62%),url("images/campus.jpg") center 52% / cover no-repeat;filter:saturate(.72)}
+@media(max-width:720px){.intro-visual{background-image:linear-gradient(90deg,#eef0eb 0%,rgba(238,240,235,.83) 36%,rgba(238,240,235,.43) 100%),linear-gradient(0deg,#eef0eb 0%,rgba(238,240,235,.2) 50%,transparent 100%),url("images/vr-headset1.jpeg")}.scene{padding-top:18px}.scene-visual{height:120px;margin:0 -15px 21px}.scene-photo-caption{font-size:11px;left:13px;bottom:10px}.story-correspondence.correspondence{padding-left:13px}.closing-visual{height:90px}}
+@media(forced-colors:active){.scene-photo-caption{background:Canvas;color:CanvasText;text-shadow:none}}
+
+/* V14: Reduce redundant editorial chrome; keep photographs as occasional scene-setting. */
+.story-correspondence .scene-sender {margin-bottom:17px}
+.story-correspondence .sender-caption::after {content:none!important}
+.scene-photo-caption {display:none}
+.scene-visual{height:144px;margin-bottom:28px}
+.scene-visual::after{background:linear-gradient(0deg,rgba(238,240,235,.35),transparent 55%)}
+@media(max-width:720px){.scene-visual{height:105px}}
+
+/* V15: consequences read as a distinct result before the next decision. */
+.after{margin-top:32px;padding:23px 26px 25px;border:1px solid #b8c8dd;border-left:5px solid var(--brand-blue);border-radius:5px;background:#f3f6fb}
+.after-label{display:block;font-size:12px;letter-spacing:.09em;font-weight:800;color:#164482;margin:0 0 12px}
+.after p{margin:0 0 20px;color:#233b47;font-size:17px;line-height:1.7}
+.after .primary{margin-top:3px}
+@media(max-width:720px){.after{padding:18px 18px 21px}}
+@media(forced-colors:active){.after{border:2px solid CanvasText;background:Canvas}}
+
+/* Version 18: leadership framing and fictional university identity */
+.university-intro { max-width: 760px; margin-top: 42px; }
+.intro-divider { border: 0; border-top: 1px solid #aebeb8; margin: 0 0 25px; }
+.university-logo { display: block; width: clamp(220px, 47vw, 365px); max-width: 100%; height: auto; object-fit: contain; margin: 0 0 18px; }
+.scenario-lead { max-width: 650px; color: #263f46; font-size: clamp(19px, 2vw, 23px); line-height: 1.55; font-weight: 600; margin: 0; }
+.intro-grid { margin-top: 44px; }
+@media(max-width:720px) { .university-intro { margin-top: 32px; } .university-logo { width: min(80%, 340px); } .intro-grid { margin-top: 34px; } }
