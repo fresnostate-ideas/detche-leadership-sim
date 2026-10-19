@@ -89,3 +89,8 @@ This version is designed toward WCAG 2.1 AA and includes accessibility-oriented 
 ### Version 15
 - Added a fourth, intentionally self-protective option to Dr. Simone Vale's Faculty Senate scene. It routes to a fourth decision with Dr. Park about a misrepresented Senate/provost conversation, followed by distinct outcomes.
 - Restyled the post-choice consequence as a bordered, high-contrast result panel to prevent it disappearing visually before Continue.
+
+### Version 16 narrative routing fix
+- When the director recommends against taking over XR and does not reverse course into a limited pilot, the third decision now involves faculty learning of the recommendation, rather than an unrelated Senate mandate concern.
+- Deflecting blame onto Dr. Park triggers a fourth decision about correcting, hedging, or doubling down on the funding story, with distinct ending consequences.
+- Senate governance dilemmas remain available on active XR initiative paths.
