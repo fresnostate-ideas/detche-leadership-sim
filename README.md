@@ -85,3 +85,7 @@ This version is designed toward WCAG 2.1 AA and includes accessibility-oriented 
 - Removed duplicate case labels, small scene numbers, and confusing message-medium tags in the narrative pane.
 - Reduced photography to three context-setting moments; the opening and conclusion retain their visuals.
 - Added a fourth, defensive response to Rafael's post-failure conversation with a distinct leadership consequence.
+
+### Version 15
+- Added a fourth, intentionally self-protective option to Dr. Simone Vale's Faculty Senate scene. It routes to a fourth decision with Dr. Park about a misrepresented Senate/provost conversation, followed by distinct outcomes.
+- Restyled the post-choice consequence as a bordered, high-contrast result panel to prevent it disappearing visually before Continue.
