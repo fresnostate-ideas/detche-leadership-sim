@@ -66,3 +66,16 @@ The permanent-provost AI pivot offers a conditional choice to ask Dr. Brooks to 
 The fictional Ash Creek University uses burgundy `#714b55` and blue `#084aae` as brand accents. Both are used with appropriate contrasting text; muted foreground text was darkened. Focus moves to the new scene heading, consequence heading, or outcome heading as the interface changes. The progress indicator includes a text equivalent.
 
 This version is designed toward WCAG 2.1 AA and includes accessibility-oriented corrections. Automated source and contrast checking is **not a conformance certification**. Before public deployment, test all branches in a browser with keyboard only, screen readers (VoiceOver + Safari and NVDA + Firefox or Chrome), zoom/reflow at 200% and 400%, and automated tools such as axe DevTools. In particular, verify focus movement and announcements when dynamic content changes, and verify each branch's text and contrast. The ADA Title II rule uses WCAG 2.1 AA; see https://www.ada.gov/resources/2024-03-08-web-rule/.
+
+
+## Version 12 interface update
+- Start Over control in the header during play and on the ending. Confirmation clears the current local session and returns to the opening. No individual decision can be undone.
+- Reduced redundant masthead, intro and footer copy. Existing narrative, branching, local-only behavior and typography remain unchanged.
+
+
+## Version 13 visual layer
+
+- Scene-specific documentary photography is loaded from `images/`. The opening image now also reads from `images/vr-headset1.jpeg`; an unchanged root copy remains for compatibility.
+- Narratives and all decision logic are preserved from Version 12. The new visual mapping only chooses photographs and the correspondence/in-person appearance of existing scenes.
+- Photographs are atmospheric/decorative and intentionally have empty alternative text. Speaker names, roles, and decisions remain text.
+- External Google Fonts remain the only externally loaded site resource. No analytics or other network calls were introduced.

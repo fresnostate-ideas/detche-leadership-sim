@@ -45,7 +45,37 @@ function chooseNext(){const p=state.selected[0],s=state.selected[1];
  return nodes.future4;
  }
  return nodes[paths[p]]}
-function render(){const n=state.current;$('phase').textContent=`DECISION ${state.step+1} OF 4`;$('scene-num').textContent=String(state.step+1).padStart(2,'0');document.querySelectorAll('.ticks i').forEach((x,i)=>x.classList.toggle('active',i<=state.step));$('who').textContent=n.author;$('speaker-inline').textContent=n.author;$('role-inline').textContent=n.role;$('role').textContent=n.role;$('avatar').textContent=n.author.replace(/^Dr\. /,'').split(' ').map(x=>x[0]).slice(-2).join('');$('channel').textContent=n.channel;$('kind').textContent=n.kind;$('context').textContent=n.context;$('heading').textContent=n.title;$('question').textContent=n.question;
+// Visual layer only: route-specific editorial photography and document treatments.
+const scenesWithImage={
+  lead2:['images/headset-pile.jpeg','EQUIPMENT / CAMPUS XR COLLECTION','equipment'],
+  coalition2:['images/campus.jpg','ASH CREEK / SHARED CAMPUS RESOURCES','campus'],
+  pilot2:['images/vr-headset1.jpeg','XR / INSTRUCTIONAL PILOTS','equipment'],
+  decline2:['images/meeting-room.jpg','ACADEMIC AFFAIRS / PRIVATE MEETING','meeting'],
+  champion3:['images/vr-headset1.jpeg','FACULTY DEVELOPMENT / XR PILOT','equipment'],
+  capacity3:['images/headset-pile.jpeg','XR INVENTORY / EQUIPMENT SUPPORT','equipment'],
+  access3:['images/vr-headset1.jpeg','XR / STUDENT LEARNING','equipment'],
+  politics3:['images/meeting-room.jpg','FACULTY GOVERNANCE / MEETING','meeting'],
+  senateRefusal4:['images/meeting-room.jpg','ACADEMIC AFFAIRS / LEADERSHIP','meeting'],
+  transition4:['images/campus.jpg','ASH CREEK / LEADERSHIP TRANSITION','campus'],
+  future4:['images/headset-pile.jpeg','XR PROGRAM / ANNUAL REVIEW','equipment'],
+  collapse3:['images/headset-pile.jpeg','XR PROGRAM / OPERATIONAL REVIEW','equipment'],
+  withdraw3:['images/meeting-room.jpg','FACULTY PARTNERS / MEETING','meeting'],
+  fallout4:['images/meeting-room.jpg','ACADEMIC TECHNOLOGY / STAFF MEETING','meeting'],
+  reputation4:['images/campus.jpg','ASH CREEK / ADMINISTRATIVE REVIEW','campus'],
+  standing4:['images/meeting-room.jpg','ACADEMIC AFFAIRS / PRIVATE MEETING','meeting']
+};
+function applyVisual(n){
+  const id=Object.keys(nodes).find(k=>nodes[k]===n);
+  const m=id&&scenesWithImage[id];
+  const visual=$('scene-visual');
+  if(m){$('scene-photo').src=m[0];$('scene-photo-caption').textContent=m[1];visual.className='scene-visual photo-'+m[2];visual.hidden=false;}
+  else { visual.hidden=true;$('scene-photo').removeAttribute('src'); }
+  const channel=(n.channel||'').toLowerCase();
+  const correspondence=/memo|reply all|email|message|security review|follow-up|request|urgent/i.test(channel);
+  $('story-correspondence').classList.toggle('correspondence',correspondence);
+  $('story-correspondence').classList.toggle('in-person',!correspondence);
+}
+function render(){const n=state.current;applyVisual(n);$('phase').textContent=`DECISION ${state.step+1} OF 4`;$('scene-num').textContent=String(state.step+1).padStart(2,'0');document.querySelectorAll('.ticks i').forEach((x,i)=>x.classList.toggle('active',i<=state.step));$('who').textContent=n.author;$('speaker-inline').textContent=n.author;$('role-inline').textContent=n.role;$('role').textContent=n.role;$('avatar').textContent=n.author.replace(/^Dr\. /,'').split(' ').map(x=>x[0]).slice(-2).join('');$('channel').textContent=n.channel;$('kind').textContent=n.kind;$('context').textContent=n.context;$('heading').textContent=n.title;$('question').textContent=n.question;
 $('narrative').replaceChildren();let paragraphs=n.body;
 if(n===nodes.future4){
  if(state.flags.has('absorb'))paragraphs=[`As the academic year ends, the pilot's early visibility has faded. Your team absorbed device maintenance and faculty support without added staffing. Course redesign consultations are now months behind schedule; several XR pilots have stopped running.`,`The interim provost's appointment is ending. She can recommend renewal but cannot commit her successor to recurring spending. The library still provides space only for demonstrations.`,`“Before I leave, I need your recommendation: what are we actually prepared to sustain?”`];
@@ -127,5 +157,5 @@ const summary=document.createElement('p');summary.textContent='This outcome is o
 $('tensions').replaceChildren();const seen=state.history.slice(1).map(x=>Object.keys(nodes).find(k=>nodes[k].title===x.node)).filter(Boolean);
 for(const id of seen){const [name,desc]=tensionData[id];const div=document.createElement('div');div.className='tension';const h=document.createElement('strong');h.textContent=name;const p=document.createElement('p');p.textContent=desc;div.append(h,p);$('tensions').append(div)}
 const t=document.createElement('div');t.className='tension';const h=document.createElement('strong');h.textContent='Choices ↔ Consequences';const d=document.createElement('p');d.textContent='Not every outcome resulted from a mistake. Not every institutional constraint was yours to resolve.';t.append(h,d);$('tensions').append(t);$('end-title').focus({preventScroll:true});$('end').scrollIntoView({behavior:'auto',block:'start'})}
-$('start').addEventListener('click',()=>{reset();$('intro').hidden=true;$('end').hidden=true;$('play').hidden=false;render()});$('next').addEventListener('click',advance);$('replay').addEventListener('click',()=>{reset();$('end').hidden=true;$('play').hidden=false;render()});reset();
+$('start').addEventListener('click',()=>{reset();$('intro').hidden=true;$('end').hidden=true;$('play').hidden=false;$('restart').hidden=false;render()});$('next').addEventListener('click',advance);$('replay').addEventListener('click',()=>{reset();$('end').hidden=true;$('play').hidden=false;$('restart').hidden=false;render()});$('restart').addEventListener('click',()=>{if(!window.confirm('Start over? Your decisions in this playthrough will be lost.'))return;reset();$('play').hidden=true;$('end').hidden=true;$('intro').hidden=false;$('restart').hidden=true;$('intro').scrollIntoView({behavior:'auto',block:'start'});$('start').focus({preventScroll:true})});reset();
 })();
