@@ -94,3 +94,12 @@ This version is designed toward WCAG 2.1 AA and includes accessibility-oriented 
 - When the director recommends against taking over XR and does not reverse course into a limited pilot, the third decision now involves faculty learning of the recommendation, rather than an unrelated Senate mandate concern.
 - Deflecting blame onto Dr. Park triggers a fourth decision about correcting, hedging, or doubling down on the funding story, with distinct ending consequences.
 - Senate governance dilemmas remain available on active XR initiative paths.
+
+
+## Version 17 opening copy
+
+The opening briefing now foregrounds leadership purpose, competing priorities, and uncertainty, and no longer introduces Dr. Park before the story. All decision logic, styling, and other content remain unchanged from Version 16.
+
+
+## Version 18 — Introductory framing and campus identity
+The introduction now separates the leadership reflection from the fictional XR case using a divider and the Ash Creek University logo (`images/ash-creek-logo-nobg-2.png`). No simulation logic changed.

@@ -102,3 +102,11 @@ body { font-family: var(--font-body); font-size: 17px; line-height: 1.57; }
 .after .primary{margin-top:3px}
 @media(max-width:720px){.after{padding:18px 18px 21px}}
 @media(forced-colors:active){.after{border:2px solid CanvasText;background:Canvas}}
+
+/* Version 18: leadership framing and fictional university identity */
+.university-intro { max-width: 760px; margin-top: 42px; }
+.intro-divider { border: 0; border-top: 1px solid #aebeb8; margin: 0 0 25px; }
+.university-logo { display: block; width: clamp(220px, 47vw, 365px); max-width: 100%; height: auto; object-fit: contain; margin: 0 0 18px; }
+.scenario-lead { max-width: 650px; color: #263f46; font-size: clamp(19px, 2vw, 23px); line-height: 1.55; font-weight: 600; margin: 0; }
+.intro-grid { margin-top: 44px; }
+@media(max-width:720px) { .university-intro { margin-top: 32px; } .university-logo { width: min(80%, 340px); } .intro-grid { margin-top: 34px; } }
