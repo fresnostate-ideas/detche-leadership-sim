@@ -86,3 +86,11 @@ body { font-family: var(--font-body); font-size: 17px; line-height: 1.57; }
 .closing-visual{height:120px;margin-bottom:28px;background:linear-gradient(0deg,rgba(238,240,235,.92) 0%,rgba(238,240,235,0) 62%),url("images/campus.jpg") center 52% / cover no-repeat;filter:saturate(.72)}
 @media(max-width:720px){.intro-visual{background-image:linear-gradient(90deg,#eef0eb 0%,rgba(238,240,235,.83) 36%,rgba(238,240,235,.43) 100%),linear-gradient(0deg,#eef0eb 0%,rgba(238,240,235,.2) 50%,transparent 100%),url("images/vr-headset1.jpeg")}.scene{padding-top:18px}.scene-visual{height:120px;margin:0 -15px 21px}.scene-photo-caption{font-size:11px;left:13px;bottom:10px}.story-correspondence.correspondence{padding-left:13px}.closing-visual{height:90px}}
 @media(forced-colors:active){.scene-photo-caption{background:Canvas;color:CanvasText;text-shadow:none}}
+
+/* V14: Reduce redundant editorial chrome; keep photographs as occasional scene-setting. */
+.story-correspondence .scene-sender {margin-bottom:17px}
+.story-correspondence .sender-caption::after {content:none!important}
+.scene-photo-caption {display:none}
+.scene-visual{height:144px;margin-bottom:28px}
+.scene-visual::after{background:linear-gradient(0deg,rgba(238,240,235,.35),transparent 55%)}
+@media(max-width:720px){.scene-visual{height:105px}}

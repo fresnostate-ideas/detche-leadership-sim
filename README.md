@@ -79,3 +79,9 @@ This version is designed toward WCAG 2.1 AA and includes accessibility-oriented 
 - Narratives and all decision logic are preserved from Version 12. The new visual mapping only chooses photographs and the correspondence/in-person appearance of existing scenes.
 - Photographs are atmospheric/decorative and intentionally have empty alternative text. Speaker names, roles, and decisions remain text.
 - External Google Fonts remain the only externally loaded site resource. No analytics or other network calls were introduced.
+
+
+### V14 interface and scenario changes
+- Removed duplicate case labels, small scene numbers, and confusing message-medium tags in the narrative pane.
+- Reduced photography to three context-setting moments; the opening and conclusion retain their visuals.
+- Added a fourth, defensive response to Rafael's post-failure conversation with a distinct leadership consequence.
