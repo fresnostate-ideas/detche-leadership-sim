@@ -110,3 +110,17 @@ body { font-family: var(--font-body); font-size: 17px; line-height: 1.57; }
 .scenario-lead { max-width: 650px; color: #263f46; font-size: clamp(19px, 2vw, 23px); line-height: 1.55; font-weight: 600; margin: 0; }
 .intro-grid { margin-top: 44px; }
 @media(max-width:720px) { .university-intro { margin-top: 32px; } .university-logo { width: min(80%, 340px); } .intro-grid { margin-top: 34px; } }
+
+/* Project attribution: opening screen only. */
+.intro-credit{margin-top:56px;padding-top:18px;border-top:1px solid #aebeb8;color:#42585d;font-size:14px;line-height:1.6}
+.intro-credit a{color:#084aae;text-decoration:underline;text-underline-offset:3px}
+.intro-credit a:hover{color:#714b55}
+.intro-credit a:focus-visible{outline:3px solid #714b55;outline-offset:3px}
+
+/* v20: The educational framing stands on its own; XR imagery belongs to the case introduction. */
+.intro{isolation:auto;}
+.university-intro{max-width:none;}
+.scenario-feature{position:relative;isolation:isolate;display:flex;align-items:center;min-height:260px;margin:4px 0 0;padding:30px 0;overflow:hidden;}
+.scenario-photo{position:absolute;inset:0 0 0 28%;z-index:-1;background-image:linear-gradient(90deg,#eef0eb 0%,rgba(238,240,235,.96) 12%,rgba(238,240,235,.55) 42%,rgba(238,240,235,.06) 92%),linear-gradient(0deg,#eef0eb 0%,transparent 40%,transparent 75%,#eef0eb 100%),url('images/vr-headset1.jpeg');background-size:cover;background-position:center,center,center 43%;opacity:.89;}
+.scenario-feature .scenario-lead{max-width:450px;position:relative;z-index:1;}
+@media(max-width:720px){.scenario-feature{min-height:230px;padding:22px 0}.scenario-photo{inset:0 -12px 0 12%;opacity:.48;background-image:linear-gradient(90deg,#eef0eb 0%,rgba(238,240,235,.83) 40%,rgba(238,240,235,.38) 100%),linear-gradient(0deg,#eef0eb 0%,transparent 35%,#eef0eb 100%),url('images/vr-headset1.jpeg')}.scenario-feature .scenario-lead{max-width:90%;}}

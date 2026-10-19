@@ -103,3 +103,10 @@ The opening briefing now foregrounds leadership purpose, competing priorities, a
 
 ## Version 18 — Introductory framing and campus identity
 The introduction now separates the leadership reflection from the fictional XR case using a divider and the Ash Creek University logo (`images/ash-creek-logo-nobg-2.png`). No simulation logic changed.
+
+## Version 19 opening attribution
+
+The opening screen includes a project credit linking to the Fresno State Office of IDEAS. The credit is contained within the opening `#intro` section and is not displayed during play or on the ending screen.
+
+## Version 20 opening composition
+The XR photograph now accompanies the Ash Creek scenario introduction, below the university logo, rather than the general leadership philosophy. The rest of the narrative and branching are unchanged.
