@@ -134,3 +134,10 @@ Added a final reflection callout at the bottom of the debrief, emphasizing purpo
 - Removes legacy paragraph max-width restrictions within the debrief, so copy uses the available column.
 - Gives the Final Reflection panel a solid blue bottom border.
 - Narrative and branching unchanged.
+
+## Version 28 — Accessibility-driven closure and continuity
+
+- The required-course accessibility review now acknowledges campus Title II preparations and the staffing required to inspect vendor accessibility information, examine actual XR interactions, develop accessible pathways, and maintain the headset fleet. A VPAT-based Accessibility Conformance Report is one possible source of vendor evidence, not an automatic legal requirement for every XR application.
+- Adds an option to recommend ending the centrally supported XR initiative on responsible accessibility/capacity grounds. That decision routes to a fourth decision about faculty transitions, truthful institutional communications, and the limits of future faculty-led projects. It does **not** mean Title II categorically prohibits XR.
+- Corrects three small continuity issues: Morgan's device-management history in the new-provost scene, Dr. Brooks's relationship to early XR grant work in the withdrawal scene, and an ambiguous pronoun in the interim provost's funding meeting.
+- No changes to site design, privacy, accounts, scoring, or the four-decision/no-backtracking structure.

@@ -194,5 +194,5 @@ body { font-family: var(--font-body); font-size: 17px; line-height: 1.57; }
 #end .tension-instruction,
 #end .tension-disclosure p,
 #end .closing-thought p { max-width: none; width: 100%; }
-#end .closing-thought { border-bottom: 18px solid #084aae; }
+#end .closing-thought { border-bottom: 8px solid #084aae; }
 @media (forced-colors: active) { #end .closing-thought { border-bottom: 8px solid CanvasText; } }
