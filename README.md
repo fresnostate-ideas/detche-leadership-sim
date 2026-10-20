@@ -110,3 +110,12 @@ The opening screen includes a project credit linking to the Fresno State Office 
 
 ## Version 20 opening composition
 The XR photograph now accompanies the Ash Creek scenario introduction, below the university logo, rather than the general leadership philosophy. The rest of the narrative and branching are unchanged.
+
+
+Version 21: Opening layout tightened. Ash Creek logo and XR illustration now share a compact row on desktop; mobile stacks them. No narrative or logic modifications.
+
+## Version 22 layout adjustment
+The opening leadership lede can now use the full available content width. No other layout, narrative, or branching logic was changed.
+
+## Version 23 update
+Added an optional defensive faculty book club pivot to the post-failure meeting with Dr. Shah, with a distinct immediate reaction and ending. No other decisions or layouts changed.

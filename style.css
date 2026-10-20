@@ -124,3 +124,35 @@ body { font-family: var(--font-body); font-size: 17px; line-height: 1.57; }
 .scenario-photo{position:absolute;inset:0 0 0 28%;z-index:-1;background-image:linear-gradient(90deg,#eef0eb 0%,rgba(238,240,235,.96) 12%,rgba(238,240,235,.55) 42%,rgba(238,240,235,.06) 92%),linear-gradient(0deg,#eef0eb 0%,transparent 40%,transparent 75%,#eef0eb 100%),url('images/vr-headset1.jpeg');background-size:cover;background-position:center,center,center 43%;opacity:.89;}
 .scenario-feature .scenario-lead{max-width:450px;position:relative;z-index:1;}
 @media(max-width:720px){.scenario-feature{min-height:230px;padding:22px 0}.scenario-photo{inset:0 -12px 0 12%;opacity:.48;background-image:linear-gradient(90deg,#eef0eb 0%,rgba(238,240,235,.83) 40%,rgba(238,240,235,.38) 100%),linear-gradient(0deg,#eef0eb 0%,transparent 35%,#eef0eb 100%),url('images/vr-headset1.jpeg')}.scenario-feature .scenario-lead{max-width:90%;}}
+
+/* v21: a tighter opening composition. Keep the leadership framing separate,
+   but make the Ash Creek identity and XR case a single visual unit. */
+.intro { padding-top: 44px; padding-bottom: 48px; min-height: 0; }
+.intro h1 { margin-bottom: 18px; }
+.intro .lede { margin-top: 0; margin-bottom: 0; line-height: 1.48; }
+.university-intro {
+  display: grid;
+  grid-template-columns: minmax(205px, 285px) minmax(0, 1fr);
+  gap: 12px 25px;
+  align-items: center;
+  margin-top: 28px;
+}
+.intro-divider { grid-column: 1 / -1; width: 100%; margin: 0 0 2px; }
+.university-logo { width: 100%; max-width: 285px; margin: 0; }
+.scenario-feature { min-height: 170px; margin: 0; padding: 20px 12px 20px 22px; }
+.scenario-photo { inset: 0 -8px 0 0; }
+.scenario-feature .scenario-lead { max-width: 310px; font-size: clamp(18px, 1.8vw, 22px); }
+.intro-grid { margin-top: 24px; margin-bottom: 26px; }
+.intro-credit { margin-top: 32px; }
+@media (max-width: 720px) {
+  .intro { padding-top: 32px; padding-bottom: 40px; }
+  .university-intro { grid-template-columns: 1fr; gap: 8px; margin-top: 23px; }
+  .intro-divider { grid-column: 1; }
+  .university-logo { width: min(70%, 270px); max-width: 270px; }
+  .scenario-feature { min-height: 150px; padding: 14px 0; }
+  .scenario-photo { inset: 0 -12px 0 12%; }
+  .intro-grid { margin-top: 20px; }
+}
+
+/* v22: The leadership lede no longer shares space with the XR hero image. */
+.intro .lede { max-width: none; width: 100%; }
