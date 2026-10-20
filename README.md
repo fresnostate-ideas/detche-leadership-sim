@@ -127,3 +127,10 @@ Dr. Brooks is consistently identified as an Assistant Professor of Biology (incl
 
 ## Version 25
 Added a final reflection callout at the bottom of the debrief, emphasizing purpose, competing priorities, imperfect leadership, and learning from consequences. No narrative branches or decision logic changed.
+
+
+## Version 27 — Debrief finishing adjustments
+- Adds a guiding-principle question to the “What would you choose again?” reflection.
+- Removes legacy paragraph max-width restrictions within the debrief, so copy uses the available column.
+- Gives the Final Reflection panel a solid blue bottom border.
+- Narrative and branching unchanged.
