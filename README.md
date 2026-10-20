@@ -119,3 +119,7 @@ The opening leadership lede can now use the full available content width. No oth
 
 ## Version 23 update
 Added an optional defensive faculty book club pivot to the post-failure meeting with Dr. Shah, with a distinct immediate reaction and ending. No other decisions or layouts changed.
+
+## Version 24: Faculty rank and AI investment rationale
+
+Dr. Brooks is consistently identified as an Assistant Professor of Biology (including in faculty-champion scenes). Dr. Shah's permanent-provost pivot now explicitly cites fictional system-level AI investments, centrally funded licensing, and grant opportunities, contrasting with XR's unfunded operating model. No decisions or routing changed.
