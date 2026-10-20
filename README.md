@@ -123,3 +123,7 @@ Added an optional defensive faculty book club pivot to the post-failure meeting 
 ## Version 24: Faculty rank and AI investment rationale
 
 Dr. Brooks is consistently identified as an Assistant Professor of Biology (including in faculty-champion scenes). Dr. Shah's permanent-provost pivot now explicitly cites fictional system-level AI investments, centrally funded licensing, and grant opportunities, contrasting with XR's unfunded operating model. No decisions or routing changed.
+
+
+## Version 25
+Added a final reflection callout at the bottom of the debrief, emphasizing purpose, competing priorities, imperfect leadership, and learning from consequences. No narrative branches or decision logic changed.

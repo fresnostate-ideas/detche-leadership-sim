@@ -156,3 +156,9 @@ body { font-family: var(--font-body); font-size: 17px; line-height: 1.57; }
 
 /* v22: The leadership lede no longer shares space with the XR hero image. */
 .intro .lede { max-width: none; width: 100%; }
+
+/* v25: concluding reflection after the participant's individualized debrief. */
+.closing-thought { margin: 2px 0 30px; padding: clamp(22px, 3vw, 34px); background: #f8f6f3; border: 1px solid #c8b8bb; border-left: 5px solid #714b55; border-radius: 3px; }
+.closing-thought p { max-width: 850px; margin: 0 0 15px; color: #263b42; line-height: 1.66; font-size: clamp(16px, 1.65vw, 19px); }
+.closing-thought p:last-child { margin-bottom: 0; font-family: var(--font-display); font-size: clamp(19px, 2.15vw, 25px); font-weight: 550; line-height: 1.43; color: #714b55; }
+@media (max-width: 720px) { .closing-thought { padding: 20px; } }
