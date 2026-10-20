@@ -141,3 +141,10 @@ Added a final reflection callout at the bottom of the debrief, emphasizing purpo
 - Adds an option to recommend ending the centrally supported XR initiative on responsible accessibility/capacity grounds. That decision routes to a fourth decision about faculty transitions, truthful institutional communications, and the limits of future faculty-led projects. It does **not** mean Title II categorically prohibits XR.
 - Corrects three small continuity issues: Morgan's device-management history in the new-provost scene, Dr. Brooks's relationship to early XR grant work in the withdrawal scene, and an ambiguous pronoun in the interim provost's funding meeting.
 - No changes to site design, privacy, accounts, scoring, or the four-decision/no-backtracking structure.
+
+## Version 29 — Accreditation and Senate governance routing
+
+- Adds an active-coalition route to the Faculty Senate scenario: a director may seek provost sponsorship for a voluntary campus XR framework based on preliminary coalition support. The Senate then raises participation and workload concerns; subsequent choices can lead to the existing Senate/accreditation confrontation, a rumor-repair conversation, or a bounded pilot review.
+- Preserves existing faculty champion and withdrawal branches, the limited-pilot path from the initial decline, and all prior endings and accessibility closure options.
+- Establishes Dr. Park’s accreditation liaison responsibilities and her concurrent Senate tenure-review work in the opening memo, then makes those competing obligations visible to anyone who encounters the Senate scene (not only those who escalate).
+- Retains four decisions, no backtracking, local-only state, and the existing debrief design.
